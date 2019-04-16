@@ -1,0 +1,27 @@
+{% extends "news_app/base.html" %}
+
+{% block content %}
+
+    <div class="container">
+
+        <article class="media content-section">
+
+            <div class="media-body">
+
+                <div class="article-metadata">
+
+                    <h2 class="article-title">{{ object.title }}</h2>
+                    <small class="text-muted">{{ object.date }} - </small>
+                    <a class="mr-2" href="{{ object.url }}">{{ object.url }}</a>
+
+                </div>
+
+            <p class="article-content">{{ post.text }}</p>
+            
+
+            </div>
+        </article>
+
+    </div>
+
+{% endblock %}
